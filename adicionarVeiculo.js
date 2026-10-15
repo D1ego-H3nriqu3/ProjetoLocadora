@@ -3,7 +3,7 @@ const prompt = PromptSync()
 
 function informacoesVeiculo(veiculos){
     console.log("\n-----------------------------\n")
-    let placa = (prompt("Digite a placa do veículo: ")).trim()
+    let placa = (prompt("Digite a placa do veículo: ")).trim().toUpperCase()
     if(placa === "" || placa.length > 7){
         console.log("Placa inválida! Digite uma placa válida!")
         return informacoesVeiculo(veiculos)
