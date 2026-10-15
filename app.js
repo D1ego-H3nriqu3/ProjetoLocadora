@@ -4,6 +4,7 @@ import veiculos from "./veiculos.js";
 import adicionarVeiculo from "./adicionarVeiculo.js";
 import listarVeiculos from "./listarVeiculos.js";
 import attVeiculos from "./atualizarVeiculos.js";
+import removerVeiculo from "./removerVeiculo.js";
 
 let indice = true
 
@@ -28,7 +29,7 @@ veiculos.findIndex
         attVeiculos(veiculos)
         break
         case("4"):
-
+        removerVeiculo(veiculos)
         break
         case("0"):
         indice = false

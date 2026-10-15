@@ -5,7 +5,8 @@ export default function attVeiculos(veiculos){
     console.log("\n-----------------------------\n")
     let id = Number(prompt("Qual o ID do veículo que gostaria de alterar? "))
     if(isNaN(id)){
-        console.log("ID inválido! DIgite um ID válido!")
+        console.log("\nID inválido! Digite um ID válido!")
+        return false
     }
     const indice = veiculos.findIndex((veiculo) => veiculo.id === id)
     if(indice === -1){
