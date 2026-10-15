@@ -3,6 +3,7 @@ const prompt = PromptSync()
 import veiculos from "./veiculos.js";
 import adicionarVeiculo from "./adicionarVeiculo.js";
 import listarVeiculos from "./listarVeiculos.js";
+import attVeiculos from "./atualizarVeiculos.js";
 
 let indice = true
 
@@ -13,6 +14,7 @@ do{
 3 - Atualizar veículo
 4 - Remover veículo
 0 - Sair`)
+veiculos.findIndex
     let resposta = (prompt("Escolha uma opção: ")).trim()
     switch(resposta){
         case("1"):
@@ -23,7 +25,7 @@ do{
         listarVeiculos(veiculos)
         break
         case("3"):
-
+        attVeiculos(veiculos)
         break
         case("4"):
 
