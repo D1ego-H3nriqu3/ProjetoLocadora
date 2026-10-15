@@ -2,6 +2,7 @@ import PromptSync from "prompt-sync";
 const prompt = PromptSync()
 import veiculos from "./veiculos.js";
 import adicionarVeiculo from "./adicionarVeiculo.js";
+import listarVeiculos from "./listarVeiculos.js";
 
 let indice = true
 
@@ -19,7 +20,7 @@ do{
         adicionarVeiculo.addVeiculo(veiculos, novoVeiculo)
         break
         case("2"):
-
+        listarVeiculos(veiculos)
         break
         case("3"):
 
