@@ -45,7 +45,7 @@ export default function attVeiculos(veiculos){
 
     veiculos[indice].modelo = novoModelo || veiculos[indice].modelo
     veiculos[indice].ano = novoAnoATT || veiculos[indice].ano
-    veiculos[indice].acessorios = novoAcessorios || veiculos[indice].acessorios
+    veiculos[indice].acessorios = (novoAcessorios > 0) || veiculos[indice].acessorios
     
     console.log("\nVeículo atualizado com sucesso!")
 

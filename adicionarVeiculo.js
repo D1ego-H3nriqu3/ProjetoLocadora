@@ -28,8 +28,9 @@ function informacoesVeiculo(veiculos){
     }
 
     let acessorios = []
-    let resposta = ""
 
+    let resposta = (prompt("Adicionar acessorios no veículo? (sim/Enter) ")).trim().toLowerCase()
+    if(resposta === "sim"){
     do{
         let acessorio = (prompt("Digite um acessório do veículo: ")).trim()
         if(acessorio === ""){
@@ -40,7 +41,7 @@ function informacoesVeiculo(veiculos){
         }
         resposta = (prompt("Adicionar outro acessório? (sim/nao) ")).trim().toLowerCase()
     }while(resposta === "sim")
-        
+    }   
         return {
             placa: placa,
             modelo: modelo,
